@@ -264,10 +264,7 @@ Look for rapid repeated POSTs from the same source IP.
 icmp and ip.src == <suspicious_IP>
 ```
 
-### 7.4 Checking Cisco ASA Drops
-When capturing behind an ASA, unexpected RSTs or missing traffic often indicate ASA policy drops. Cross-reference with ASA syslogs for `%ASA-4-106023` (deny messages).
-
-### 7.5 Asymmetric Routing Detection
+### 7.4 Asymmetric Routing Detection
 If you see TCP sessions where SYN and SYN-ACK are present but the connection never completes, suspect asymmetric routing — packets are returning via a different path than they left.
 
 ---
