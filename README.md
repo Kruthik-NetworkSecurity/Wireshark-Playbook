@@ -83,8 +83,8 @@ This isolates the Certificate message so you can inspect the cert being presente
 ### 💡 Real Scenario
 > **Problem:** Users getting SSL errors connecting to a NetScaler VIP.  
 > **Filter used:** `tls.alert_message`  
-> **Finding:** Server sending `handshake_failure` — trace showed client was offering only TLS 1.0, but NetScaler was configured to require TLS 1.2 minimum.  
-> **Fix:** Updated SSL profile on NetScaler to allow TLS 1.0 temporarily, then pushed client updates.
+> **Finding:** Server sending `handshake_failure` — trace showed client was offering only TLS 1.2, but NetScaler was configured to require TLS 1.3 minimum.  
+> **Fix:** Updated SSL profile on NetScaler to allow TLS 1.2 temporarily, then pushed client updates.
 
 ---
 
