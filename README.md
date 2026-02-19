@@ -316,33 +316,33 @@ Go to **Statistics → Conversations → TCP tab** → sort by Duration. The lon
 ## 10. Quick Reference Cheatsheet
 
 ```
-# ── BASIC ──────────────────────────────────────────
+# BASIC 
 ip.addr == X.X.X.X          # Filter by IP
 tcp.port == 443              # Filter by port
 !(arp or dns or icmp)        # Remove noise
 
-# ── TCP PROBLEMS ───────────────────────────────────
+# TCP PROBLEMS
 tcp.analysis.flags           # All TCP anomalies
 tcp.analysis.retransmission  # Retransmissions
 tcp.analysis.zero_window     # Zero window (session hang)
 tcp.flags.reset == 1         # Connection resets (RST)
 tcp.flags.syn == 1 and tcp.flags.ack == 0  # New connections only
 
-# ── SSL/TLS ────────────────────────────────────────
+# SSL/TLS 
 tls.handshake                # All TLS handshake messages
 tls.alert_message            # TLS failures/alerts
 tls.handshake.type == 11     # Server certificate
 
-# ── DNS ────────────────────────────────────────────
+# DNS
 dns.flags.rcode != 0         # DNS errors
 dns.flags.response == 0      # Queries only
 
-# ── HTTP ───────────────────────────────────────────
+# HTTP
 http.response.code >= 400    # HTTP errors
 http.response.code == 403    # Forbidden / WAF blocks
 http.response.code == 502    # Bad gateway (LB → backend issue)
 
-# ── SECURITY ───────────────────────────────────────
+# SECURITY
 tcp.flags.syn == 1 and tcp.flags.ack == 0 and ip.src == X.X.X.X  # Port scan
 http.request.method == "POST" and http.request.uri contains "login"  # Brute force
 ```
