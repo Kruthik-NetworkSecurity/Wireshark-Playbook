@@ -1,7 +1,7 @@
 # 🦈 Wireshark Playbook — Network Security Field Guide
 
 > A practical, real-world reference for network engineers and security analysts.  
-> Built from 3.6 years of enterprise troubleshooting experience across Citrix NetScaler, Cisco ASA, WAF, and SSL environments.
+> Built from 3.11 years of enterprise troubleshooting experience across Citrix NetScaler, Cisco ASA, WAF, and SSL environments.
 
 ---
 
@@ -351,7 +351,7 @@ http.request.method == "POST" and http.request.uri contains "login"  # Brute for
 
 ## About This Playbook
 
-Built by **Kruthik K V** — Network Security Engineer with 3.6 years of enterprise support experience across Citrix NetScaler ADC, Cisco ASA, WAF, and SSL VPN environments.
+Built by **Kruthik K V** — Network Security Engineer with 3.11 years of enterprise support experience across Citrix NetScaler ADC, Cisco ASA, WAF, and SSL VPN environments.
 
 📧 kruthik.39t@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/kruthik-k-v-3115ba21a)  
